@@ -45,7 +45,6 @@
       align-items: center;
       justify-content: center;
       margin-right: 200px;
-      
     }
     p {
       margin-top: 10px;
@@ -79,7 +78,7 @@
     .berry {
       width: 40px;
       height: 40px;
-      background-image: url('dobby.png');
+      background-image: url('senti.png');
       background-size: cover;
       position: absolute;
       cursor: pointer;
@@ -101,12 +100,19 @@
     <div id="instructions">
       <h2>🎮 How to Play</h2>
       <ul>
-        <li>1. Enter your name in the box.</li>
-        <li>2. Click “Start Game” to begin.</li>
-        <li>3. Dobby ghost will appear randomly in the game box.</li>
-        <li>4. Click the dobby before it disappears to score.</li>
-        <li>5. Dobby ghost = 1 point</li>
-        <li>6. Game lasts 30 seconds, Dobby get faster!</li>
+        <li>Enter your name in the box.</li>
+        <li>Click “Start Game” to begin.</li>
+        <li>Ghosts will appear randomly in the game box.</li>
+        <li>Click the ghosts before it disappears to score.</li>
+        <li> <div class="flex items-center space-x-2">
+  <img src="senti.png" alt="icon" class="w-8 h-8">
+  <span class="text-medium"> = 1 Point</span>
+</div></li>
+        <li> <div class="flex items-center space-x-2">
+  <img src="dobby.png" alt="icon" class="w-8 h-8">
+  <span class="text-medium"> = 5 Point</span>
+</div></li>
+        <li>Game lasts 30 seconds, ghosts get faster!</li>
       </ul>
     </div>
 
