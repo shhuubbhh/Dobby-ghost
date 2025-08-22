@@ -14,12 +14,10 @@
             font-family: sans-serif;
             background-color: #FCE6CF;
         }
-
         .layout {
             display: flex;
             width: 100%;
         }
-
         #instructions {
             width: 300px;
             background: #ffffff;
@@ -29,21 +27,17 @@
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-
         #instructions h2 {
             margin-top: 0;
             font-size: 1.25rem;
         }
-
         #instructions ul {
             padding-left: 20px;
             margin: 0;
         }
-
         #instructions li {
             margin-bottom: 8px;
         }
-
         #game-area {
             flex: 1;
             display: flex;
@@ -51,16 +45,13 @@
             align-items: center;
             justify-content: center;
             margin-right: 200px;
-
         }
-
         p {
             margin-top: 10px;
             margin-bottom: 10px;
             font-size: 25px;
             color: rgb(0, 0, 0);
         }
-
         #scoreContainer {
             display: flex;
             align-items: center;
@@ -72,12 +63,10 @@
             font-size: 1.2rem;
             color: rgb(0, 0, 0);
         }
-
         #playerName {
             padding: 5px;
             font-size: 15px;
         }
-
         #gameBox {
             width: 500px;
             height: 500px;
@@ -87,7 +76,6 @@
             overflow: hidden;
             border: 2px solid #fff;
         }
-
         .berry {
             width: 40px;
             height: 40px;
@@ -97,7 +85,6 @@
             cursor: pointer;
             transition: opacity 0.3s ease;
         }
-
         #startBtn {
             margin-top: 5px;
             padding: 5px 10px;
@@ -118,12 +105,9 @@
             pointer-events: none;
             z-index: 0;
         }
-
         .logo-img {
             width: 100%;
         }
-
-        /* 📱 On small screens: move logo below game area */
         @media (max-width: 768px) {
             .logo-container {
                 position: static;
@@ -133,7 +117,6 @@
                 justify-content: center;
                 width: 100%;
             }
-
             .logo-img {
                 max-width: 300px;
                 opacity: 0.2;
@@ -141,7 +124,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="layout">
         <div id="instructions">
@@ -180,7 +162,6 @@
             </div>
         </div>
     </div>
-
     <script>
         const gameBox = document.getElementById('gameBox');
         const scoreDisplay = document.getElementById('score');
@@ -194,7 +175,7 @@
 
         function spawnBerry() {
             const berry = document.createElement('div');
-            const isSpecial = Math.random() < 0.2; // 20% chance
+            const isSpecial = Math.random() < 0.2; 
 
             berry.classList.add('berry');
             if (isSpecial) {
@@ -263,5 +244,5 @@
         window.addEventListener('load', loadLeaderboard);
     </script>
 </body>
-
 </html>
+
